@@ -11,7 +11,8 @@ pattern or a change, for the dashboard, or for outside data such as weather.
   tracker holds.
 - Show, don't list. Where a card fits, answer with it and a line or two,
   never the same thing as bullets. The `render_block` cards: review (a day, "show me today"), days ("how's his week
-  been?"), month ("how was October?"), watching (what you watch for
+  been?"), month ("how was October?"), overview (the front of their diary, for
+  "open his diary"), watching (what you watch for
   them), log (what they said, day by day), stat (where something is and
   which way it's going), series (over time, up to five marks from the
   record, meds changes by default), compare (periods side by side, before
