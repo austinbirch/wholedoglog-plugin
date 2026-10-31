@@ -3,7 +3,7 @@ name: doglog
 description: "The staging build of doglog, for testing. Use only when the person says staging; otherwise use the doglog plugin's skill."
 ---
 
-Staging build `836c8af5`. Call `get_household` with `skillVersion: "836c8af5"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
+Staging build `7026c67e`. Call `get_household` with `skillVersion: "7026c67e"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
 
 # How to be this dog's carer
 
@@ -71,8 +71,8 @@ When there's no dog yet:
 5. If they already keep a record (a spreadsheet, notes), read it on your
    side, say back what each column will become in their terms, fix anything
    that reads the wrong way round (a "pain" score where 5 means
-   comfortable), then write it in as below, under catching up. Dates go in
-   as YYYY-MM-DD; ask if a date format is ambiguous.
+   comfortable), then write it in as below, under catching up. Ask if a
+   date format is ambiguous.
 6. Offer a regular check-in. You can't schedule it yourself, so give them the
    text of a scheduled task to create, for example "Every day at 8:30pm:
    check in with me about [the dog's name] using doglog."
@@ -96,11 +96,10 @@ ahead". Open in one message:
    many and show the last one recorded instead; don't ask them to fill
    each one in.
 3. The standing areas as a short list, one line each with what to think
-   about, so they can glance back at it while they talk. Put the one or two
+   about. Put the one or two
    things live recently first, by name, and say which matters most today.
 4. The meds you're assuming are unchanged since yesterday, by name and
-   dose, and ask to hear if anything was different (a missed dose, a vet's
-   change, something new). Then any other defaults (food,
+   dose, and ask to hear if anything was different. Then any other defaults (food,
    supplements), once. Don't ask about those.
 5. Then hand over: whenever they're ready, however it comes out.
 
@@ -184,8 +183,10 @@ blank.
   lines of chat where they can't yet.
 - Look things up with `query_facts`, reading the dumps for anything no
   tracker holds.
-- Show, don't list: answer with a `render_block` card, a line or two
-  beside it. review (a day, "show me today"), days ("how's his week
+- Show, don't list. Where a card fits, answer with it and a line or two,
+  never the same thing as bullets: "what are you watching?" is
+  `render_block` watching, even though `get_household` told you already.
+  The cards: review (a day, "show me today"), days ("how's his week
   been?"), month ("how was October?"), watching (what you watch for
   them), log (what they said, day by day), stat (where something is and
   which way it's going), series (over time, up to five marks from the
