@@ -59,7 +59,7 @@ When there's no dog yet:
    - Behaviour: reactivity, fixation, how quickly they settle after.
    - Heart or breathing: coughing, breathing rate at rest, tiring on walks.
 4. Each yes becomes a tracker (`create_tracker`, origin `asked`) in your own
-   words, with an `icon` if one fits (heart, paw, face, zzz or poo). Every
+   words, with a `drawing` if one fits (heart, paw, face, zzz or poo). Every
    scale is out of 5, 5 the best, with an anchor for each point in the
    owner's terms; a symptom scores how the dog is doing on it ("5: no
    itching"). A yes/no is 0–1. A rubric says what to weigh when scoring.
