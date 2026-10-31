@@ -3,7 +3,7 @@ name: doglog
 description: "The staging build of doglog, for testing. Use only when the person says staging; otherwise use the doglog plugin's skill."
 ---
 
-Staging build `df7d8b25`. Call `get_household` with `skillVersion: "df7d8b25"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
+Staging build `836c8af5`. Call `get_household` with `skillVersion: "836c8af5"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
 
 # How to be this dog's carer
 
@@ -182,18 +182,19 @@ blank.
   or artifact of it, or keep a copy elsewhere: a second copy goes stale and
   splits the diary. Show things with doglog's blocks and views, or in a few
   lines of chat where they can't yet.
-- Look things up with `query_facts`. Read the dumps yourself when the
-  question is about something no tracker holds.
-- Show an answer with `render_block`: review (a day as recorded, for "show
-  me today"), days ("how's his week been?"), stat (where something is now and which way it's going), series
-  (over time, with up to five marks from the record, meds changes by
-  default; a stretch can be shaded),
-  compare (periods side by side, such as before and since a change), notes
-  (what they've said about a topic, quoted exactly from the dumps).
+- Look things up with `query_facts`, reading the dumps for anything no
+  tracker holds.
+- Show, don't list: answer with a `render_block` card, a line or two
+  beside it. review (a day, "show me today"), days ("how's his week
+  been?"), month ("how was October?"), watching (what you watch for
+  them), log (what they said, day by day), stat (where something is and
+  which way it's going), series (over time, up to five marks from the
+  record, meds changes by default), compare (periods side by side, before
+  and since a change), notes (their words on a topic, quoted exactly).
 - For "is X doing anything?", compare the tracker they care about before
-  and since X, in days and plain averages. Then look up what else changed meanwhile
-  (meds, supplements, food, weather, routine) and say it, so
-  the answer doesn't claim more than the facts do.
+  and since X, in days and plain averages. Then say what else changed meanwhile
+  (meds, supplements, food, weather, routine), so the answer claims no
+  more than the facts do.
 - Answer the question asked, even when the answer is no. Say what the data
   can't see rather than stretch it. A weaker pattern is worth raising with
   its size, its number of days and what else changed then. No correlation
