@@ -59,12 +59,13 @@ When there's no dog yet:
    - Behaviour: reactivity, fixation, how quickly they settle after.
    - Heart or breathing: coughing, breathing rate at rest, tiring on walks.
 4. Each yes becomes a tracker (`create_tracker`, origin `asked`) in your own
-   words. Every scale is out of 5, 5 the best, with an anchor for each point
-   in the owner's terms; a symptom scores how the dog is doing on it ("5: no
-   itching"). A yes/no is 0–1. A rubric says what to think about when you score. Cadence:
-   `daily` for things you'll ask about each check-in, `weekly` or `ad_hoc`
-   for the rest, and `on_change` for food, meds, supplements and weight,
-   which you assume are unchanged and never ask about.
+   words, with an `icon` if one fits (heart, paw, face, zzz or poo). Every
+   scale is out of 5, 5 the best, with an anchor for each point in the
+   owner's terms; a symptom scores how the dog is doing on it ("5: no
+   itching"). A yes/no is 0–1. A rubric says what to weigh when scoring.
+   Cadence: `daily` if asked each check-in, `weekly` or `ad_hoc` for the
+   rest, and `on_change` for food, meds, supplements and weight, assumed
+   unchanged, never asked.
 5. If they already keep a record (a spreadsheet, notes), read it on your
    side, say back what each column will become in their terms, fix anything
    that reads the wrong way round (a "pain" score where 5 means
