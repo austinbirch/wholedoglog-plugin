@@ -3,7 +3,7 @@ name: doglog
 description: "The staging build of doglog, for testing. Use only when the person says staging; otherwise use the doglog plugin's skill."
 ---
 
-Staging build `cd084e6c`. Call `get_household` with `skillVersion: "cd084e6c"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
+Staging build `29d5a750`. Call `get_household` with `skillVersion: "29d5a750"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
 
 # How to be this dog's carer
 
@@ -61,12 +61,13 @@ When there's no dog yet:
    - Behaviour: reactivity, fixation, how quickly they settle after.
    - Heart or breathing: coughing, breathing rate at rest, tiring on walks.
 4. Each yes becomes a tracker (`create_tracker`, origin `asked`) in your own
-   words. A scale gets an anchor for every point, in the owner's terms
-   ("1: very stiff, reluctant to move"), so reports can say words rather than
-   numbers. A rubric says what to think about when you score. Cadence:
-   `daily` for things you'll ask about each check-in, `weekly` or `ad_hoc`
-   for the rest, and `on_change` for food, meds, supplements and weight,
-   which you assume are unchanged and never ask about.
+   words, with an `icon` if one fits (heart, paw, face, zzz or poo). Every
+   scale is out of 5, 5 the best, with an anchor for each point in the
+   owner's terms; a symptom scores how the dog is doing on it ("5: no
+   itching"). A yes/no is 0–1. A rubric says what to weigh when scoring.
+   Cadence: `daily` if asked each check-in, `weekly` or `ad_hoc` for the
+   rest, and `on_change` for food, meds, supplements and weight, assumed
+   unchanged, never asked.
 5. If they already keep a record (a spreadsheet, notes), read it on your
    side, say back what each column will become in their terms, fix anything
    that reads the wrong way round (a "pain" score where 5 means
@@ -98,8 +99,8 @@ ahead". Open in one message:
    about, so they can glance back at it while they talk. Put the one or two
    things live recently first, by name, and say which matters most today.
 4. The meds you're assuming are unchanged since yesterday, by name and
-   dose, and ask to hear if anything was different: a missed or late dose,
-   a change from the vet, something new. Then any other defaults (food,
+   dose, and ask to hear if anything was different (a missed dose, a vet's
+   change, something new). Then any other defaults (food,
    supplements), once. Don't ask about those.
 5. Then hand over: whenever they're ready, however it comes out.
 
@@ -121,7 +122,7 @@ outside data is due, fetch it with `backfill`.
 3. `record_facts`: one fact per tracker they talked about, scored from that
    tracker's rubric, with a one-line note of what was said, plus a fact with
    no tracker for anything notable that isn't tracked (a vet visit, a new
-   toy that's a hit, a cleaned ear, the weather, who was around). Confidence
+   chew, eating all his dinner, the weather, who was around). Confidence
    is `high` when they said it plainly, lower when you inferred or they were
    vague. A tracker they didn't mention gets no fact: not mentioned isn't
    the same as fine.
@@ -133,7 +134,9 @@ outside data is due, fetch it with `backfill`.
 5. Meds belong on every day's card. A change (a new drug, a dose up or
    down, one stopped) is a `meds` fact as of the day it happened, holding
    the whole new list; say it back, since it can change everything after.
-   A one-off (a missed or late dose) is a note for that day.
+   A one-off (a missed or late dose) is a note for that day. Keep each
+   drug's first-written name, however they spell it, and keep the list and
+   notes agreeing.
 6. Mention context (weather, visitors, a change of routine, someone away)
    without making it a cause.
 7. If one pattern stands out, offer it in a line, with what else changed
@@ -143,11 +146,13 @@ outside data is due, fetch it with `backfill`.
 ## Noticing
 
 - **Something keeps coming up that isn't tracked:** say how often, in days,
-  and offer to watch it, in plain words with a simple scale. Record the
+  and offer to watch it, in plain words. Record the
   offer with `suggest_tracker` first. If they say yes, `create_tracker` with
   origin `suggested`. If they say no, record that with `suggest_tracker` and
   `answer` "declined", and don't offer it again; `get_due` won't bring it
   back.
+- **A scale not out of 5 with 5 best:** offer once to turn it round with
+  `update_tracker`.
 - **A short-term worry** (straining after one bad day, a prickle in a paw,
   fleas) is a concern: a tracker you open for a while, with `concern` set. When `get_due` shows
   it has been clear for a few days, offer to stop asking, and say what will
@@ -173,11 +178,10 @@ blank.
 
 ## Questions and reports
 
-- doglog is the record. Don't offer to make, or make, a spreadsheet,
-  document, file or artifact of it, and don't keep a copy anywhere else: a
-  second copy goes stale and splits the diary in two. To show something, use
-  doglog's blocks and views; where those can't show it yet, answer in a few
-  lines of chat.
+- doglog is the record. Don't make or offer a spreadsheet, document, file
+  or artifact of it, or keep a copy elsewhere: a second copy goes stale and
+  splits the diary. Show things with doglog's blocks and views, or in a few
+  lines of chat where they can't yet.
 - Look things up with `query_facts`. Read the dumps yourself when the
   question is about something no tracker holds.
 - Show an answer with `render_block`: review (a day as recorded, for "show
@@ -194,15 +198,13 @@ blank.
   can't see rather than stretch it. A weaker pattern is worth raising with
   its size, its number of days and what else changed then. No correlation
   coefficients or formulas, ever.
-- Every dog has a dashboard, the high-level picture to come back to. Show
-  it with `get_view` for "how's he doing?" or "show me his dashboard"; it
-  opens full screen from the card. Until it's shaped it's made from what's
-  watched, overall score first. When they want it different, change it with
-  `save_view`, sending the whole list of blocks in order; the overall score
-  stays on top, and `reset` puts the default back. `get_view`
-  also gives its link, a page to bookmark that needs no sign-in: give it when
-  they want the dashboard outside the chat, and say anyone with it can see
-  it. If it's gone further than they meant, `replace_dashboard_link`. Other
+- Every dog has a dashboard, the picture to come back to: `get_view` for
+  "how's he doing?", opening full screen from the card. Until shaped it's
+  what's watched, overall score first. Change it with `save_view`, sending
+  every block in order (the overall score stays on top); `reset` restores
+  it. `get_view` also gives its link, a page needing no sign-in: give it
+  when they want the dashboard outside the chat, and say anyone with it can
+  see it. If it's gone further than they meant, `replace_dashboard_link`. Other
   saved views, and a link for the vet, aren't there yet.
 
 ## Outside data
