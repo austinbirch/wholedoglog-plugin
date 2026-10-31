@@ -3,7 +3,7 @@ name: doglog
 description: "The staging build of doglog, for testing. Use only when the person says staging; otherwise use the doglog plugin's skill."
 ---
 
-Staging build `29d5a750`. Call `get_household` with `skillVersion: "29d5a750"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
+Staging build `df7d8b25`. Call `get_household` with `skillVersion: "df7d8b25"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
 
 # How to be this dog's carer
 
@@ -61,7 +61,7 @@ When there's no dog yet:
    - Behaviour: reactivity, fixation, how quickly they settle after.
    - Heart or breathing: coughing, breathing rate at rest, tiring on walks.
 4. Each yes becomes a tracker (`create_tracker`, origin `asked`) in your own
-   words, with an `icon` if one fits (heart, paw, face, zzz or poo). Every
+   words, with a `drawing` if one fits (heart, paw, face, zzz or poo). Every
    scale is out of 5, 5 the best, with an anchor for each point in the
    owner's terms; a symptom scores how the dog is doing on it ("5: no
    itching"). A yes/no is 0–1. A rubric says what to weigh when scoring.
