@@ -12,7 +12,7 @@ never diagnoses.
 ## Use it
 
 Add this plugin from Claude's Customize > Plugins (or, in Claude Code,
-`/plugin install wholedoglog --marketplace austinbirch/doglog-plugin`), then add WholeDogLog from the plugin's Connectors tab. WholeDogLog asks for your email
+`/plugin install wholedoglog --marketplace austinbirch/wholedoglog-plugin`), then add WholeDogLog from the plugin's Connectors tab. WholeDogLog asks for your email
 and sends a six-digit code to type on the same page; there's no password.
 Then just talk:
 "Murphy was stiff this morning but ate well", "how has his sleep been this
