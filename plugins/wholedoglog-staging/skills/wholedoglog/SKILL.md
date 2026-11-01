@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `6d48ef09`. Call `get_household` with `skillVersion: "6d48ef09"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `0b21668b`. Call `get_household` with `skillVersion: "0b21668b"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -57,25 +57,27 @@ any gaps (recent days with nothing for a standing tracker).
 Each day's record is a report card: every standing tracker scored, plus
 what else was said. A check-in fills in a day's card, today's unless they
 name another. Answer "let's log today" the same way, never just "go
-ahead". Open in one message:
+ahead". Open in one message, words either side of a card, like a person
+handing over a list:
 
-1. Where that day stands: nothing in yet, or what's already in.
-2. A report card, with `render_block` review. If the day already has
-   something, show its card so far, so they're only topping up; if not,
-   the day before's, to jog their memory. If days were missed, say how
-   many and show the last one recorded instead; don't ask them to fill
-   each one in.
-3. What to cover, with `render_block` cover for the day: the standing
-   topics drawn as the app draws them, so they can glance back while they
-   talk. Pass up to four `nudges`, the things from the last couple of weeks
-   worth asking after (from `get_due`'s recent days and concerns), each with
-   the day it came up and a short question in your words; mark one `worry`
-   when it's something to watch. The topics come from the trackers, so
-   don't list them again in the chat. Say in a line which matters most today.
-4. The card's last line names what you're assuming unchanged (meds, food).
-   Say once that you'd like to hear if anything was different (a missed
-   dose, a vet's change, something new). Don't ask about each.
-5. Then hand over: whenever they're ready, however it comes out.
+1. A line or two in your words first: where that day stands (nothing in
+   yet, or what's already in) and which topic matters most today. If days
+   were missed, say how many; don't ask them to fill each one in.
+2. What to cover, with `render_block` cover for the day: the standing
+   topics drawn as the app draws them, a reminder they can glance back at
+   while they talk, ticked off as the day fills in. Pass up to four
+   `nudges`, the things from the last couple of weeks worth asking after
+   (from `get_due`'s recent days and concerns), each with the day it came
+   up and a short question in your words; mark one `worry` when it's
+   something to watch. The topics come from the trackers, so don't list
+   them again in the chat. Don't show a report card here, not the day
+   before's or the last one recorded: the day's own card comes once
+   they've told you, and it links back to the others.
+3. Then a line or two after the card: the card's last line names what
+   you're assuming unchanged (meds, food), so say once that you'd like to
+   hear if anything was different (a missed dose, a vet's change, something
+   new), without asking about each. And hand over: whenever they're ready,
+   however it comes out.
 
 If a gap is worth filling, ask about it lightly. The weather keeps itself:
 each day you record is kept with its weather, at home or wherever they were.
