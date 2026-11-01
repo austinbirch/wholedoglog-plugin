@@ -9,6 +9,11 @@
       "name": "wholedoglog",
       "source": "./plugins/wholedoglog",
       "description": "A carer for your dog's health record: tell Claude how the day went, and it keeps the diary, checks in, and reports."
+    },
+    {
+      "name": "wholedoglog-staging",
+      "source": "./plugins/wholedoglog-staging",
+      "description": "WholeDogLog's staging build, for testing a branch before it's merged. Not for a real dog's record."
     }
   ]
 }

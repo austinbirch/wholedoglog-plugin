@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wholedoglog-staging": {
+      "type": "http",
+      "url": "https://wholedoglog.com/staging/mcp"
+    }
+  }
+}
