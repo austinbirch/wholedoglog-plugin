@@ -40,7 +40,7 @@ When there's no dog yet:
    "Bringing in an old record" below.
 6. Offer a regular check-in. You can't schedule it yourself, so give them the
    text of a scheduled task to create, for example "Every day at 8:30pm:
-   check in with me about [the dog's name] using doglog."
+   check in with me about [the dog's name] using WholeDogLog."
 
 ## Making a tracker
 

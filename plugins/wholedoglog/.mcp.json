@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wholedoglog": {
+      "type": "http",
+      "url": "https://wholedoglog.com/mcp"
+    }
+  }
+}
