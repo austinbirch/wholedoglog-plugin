@@ -88,7 +88,9 @@ outside data is due, fetch it with `backfill`.
    No score until you've heard it all; a draft score makes the rest feel
    optional.
 3. `record_facts`: one fact per tracker they talked about, scored from that
-   tracker's rubric, with a one-line note of what was said, plus a fact with
+   tracker's rubric, with a one-line note of what was said (a count as a
+   whole `value`, "a couple" as 2 at lower confidence; a choice as the
+   nearest option in `text`, their own words in the note), plus a fact with
    no tracker for anything notable that isn't tracked (a vet visit, a new
    chew, eating all his dinner, the weather, who was around). Confidence
    is `high` when they said it plainly, lower when you inferred or they were
