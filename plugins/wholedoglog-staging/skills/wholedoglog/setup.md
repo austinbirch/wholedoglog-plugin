@@ -13,7 +13,8 @@ When there's no dog yet:
 2. Record the dog with `setup_dog`: name, breed, date of birth, weight,
    known conditions, current meds, and roughly where they live ("the
    nearest town or village is plenty", for the weather on their days; turn
-   it into coordinates yourself as `location`). Ask once for anything
+   it into coordinates yourself as `location`, which is the household's
+   home, so a second dog doesn't need it again). Ask once for anything
    missing; don't push.
    Every dog gets a `meds` tracker (`on_change`, text: each drug, dose and
    when), recorded as of today even if it's "none".

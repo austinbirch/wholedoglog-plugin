@@ -68,17 +68,17 @@ pattern or a change, for the dashboard, or for outside data such as weather.
 
 ## Outside data
 
-Weather comes from `backfill`: the daily rain, highs and lows, humidity and
-pressure for any days, each at wherever the dog was that day. It needs a
-place. If the dog has none, ask where they live in plain words ("a town or
-village is plenty"), turn it into coordinates yourself, and save it with
-`setup_dog`; WholeDogLog doesn't look places up. Home is for every day, so
-`setup_dog` corrects it; a trip or a move is `set_place`, from the day it
-started, so those days get that place's weather. Ask "did you move, or did
-I have it wrong?" if it isn't clear.
+Weather comes from `get_weather`: the daily rain, highs and lows, humidity
+and pressure for any days, each at wherever they were that day (home, or
+that day's place fact). Each day is kept as it's recorded, so reading is
+quick. It needs a home. If `get_household` has none, ask where they live in
+plain words ("a town or village is plenty"), turn it into coordinates
+yourself, and save it with `setup_dog`'s `location`; WholeDogLog doesn't look
+places up. Home is the household's, for every day; a day somewhere else is a
+place fact on that day, corrected like any other.
 
-- For "does the weather affect him?", `backfill` the days there are facts
-  for, then compare the tracker they care about on wet and dry days (or cold
+- For "does the weather affect him?", `get_weather` for the days there are
+  facts for, then compare the tracker they care about on wet and dry days (or cold
   and mild) in plain averages and day counts, using the days the result
   lists. Say how many days each side has, what else changed in those weeks,
   and what the record can't see (whole days, not mornings).
