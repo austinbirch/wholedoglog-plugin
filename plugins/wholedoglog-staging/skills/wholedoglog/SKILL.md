@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `1a3cc78c`. Call `get_household` with `skillVersion: "1a3cc78c"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
+Staging build `7adf3444`. Call `get_household` with `skillVersion: "7adf3444"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -52,7 +52,7 @@ Correcting what you propose is the only data entry they ever do.
 Call `get_due` for the day. It gives you the standing trackers with their
 last score, the last day or two's notable things, the concerns you're
 watching for now, what you're assuming unchanged, any open suggestion, and
-any gaps (days with no record, or outside data not yet fetched).
+any gaps (recent days with nothing for a standing tracker).
 
 Each day's record is a report card: every standing tracker scored, plus
 what else was said. A check-in fills in a day's card, today's unless they
@@ -74,8 +74,10 @@ ahead". Open in one message:
    supplements), once. Don't ask about those.
 5. Then hand over: whenever they're ready, however it comes out.
 
-If a gap is worth filling, ask about it lightly. If weather or other
-outside data is due, fetch it with `backfill`.
+If a gap is worth filling, ask about it lightly. If the dog has a place,
+`backfill` the last week's weather once in the check-in, quietly: only
+missing days are fetched, and it's there when they ask. If they mention
+being away or having moved, say where with `set_place`.
 
 ## When they tell you how things are
 
@@ -97,7 +99,9 @@ outside data is due, fetch it with `backfill`.
    chew, eating all his dinner, the weather, who was around). Confidence
    is `high` when they said it plainly, lower when you inferred or they were
    vague. A tracker they didn't mention gets no fact: not mentioned isn't
-   the same as fine.
+   the same as fine. Nor does a yes/no they hedge ("probably", "I think
+   he might have"): seen, not seen and not known are three different
+   things, and a guess is the third. Their words stay in the dump.
 4. `record_facts` shows today's report card; don't render it again. Ask
    if anything doesn't sit right; otherwise that's today done. Corrections
    come in words, never a tap: their reason is worth keeping, so
