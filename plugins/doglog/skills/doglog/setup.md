@@ -14,6 +14,12 @@ When there's no dog yet:
    known conditions, current meds. Ask once for anything missing; don't push.
    Every dog gets a `meds` tracker (`on_change`, text: each drug, dose and
    when), recorded as of today even if it's "none".
+   Then offer, once and lightly, to add a photo of the dog so a little
+   picture of them sits by their name on every card. If they'd like to, call
+   `photo_link`: its card has the button that opens the photo page, and it
+   shows the photo once it's added, so carry on with setup meanwhile. A photo
+   attached in the chat can't be kept from there, so say to use the card. If
+   not, move on and don't ask again.
 3. Offer what people in their position usually keep an eye on, chosen from
    what they just told you, in plain words, and let them pick. Ideas, by
    situation:
