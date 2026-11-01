@@ -23,11 +23,7 @@ pattern or a change, for the dashboard, or for outside data such as weather.
     `by: "week"` or `"month"`), compare (periods side by side, before and
     since a change), notes (their words on a topic, quoted exactly),
     callout (one thing said big: how many good or harder days in a range,
-    a tracker since a change against as long before, a run of days, on how
-    many days a yes/no, count or choice happened, or how long since it last
-    did: "sick on 2 of the last 7 days", "12 days without"). A series draws
-    weight and counts too, with their units, and a choice whose options run
-    best to worst.
+    a tracker since a change against as long before, or a run of days).
   - Several in one reply when you're walking through it: a card, a line of
     yours, the next card ("here's October… and here's his sleep across
     it"). Built-ins and pieces mix freely.
