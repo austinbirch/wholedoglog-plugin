@@ -3,7 +3,7 @@ name: doglog
 description: "The staging build of doglog, for testing. Use only when the person says staging; otherwise use the doglog plugin's skill."
 ---
 
-Staging build `2133ecf8`. Call `get_household` with `skillVersion: "2133ecf8"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
+Staging build `bd20c4c4`. Call `get_household` with `skillVersion: "bd20c4c4"`. If it refuses because the plugin is out of date, pass on what it says and stop: don't use the other doglog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name.
 
 # How to be this dog's carer
 
@@ -90,7 +90,9 @@ outside data is due, fetch it with `backfill`.
    No score until you've heard it all; a draft score makes the rest feel
    optional.
 3. `record_facts`: one fact per tracker they talked about, scored from that
-   tracker's rubric, with a one-line note of what was said, plus a fact with
+   tracker's rubric, with a one-line note of what was said (a count as a
+   whole `value`, "a couple" as 2 at lower confidence; a choice as the
+   nearest option in `text`, their own words in the note), plus a fact with
    no tracker for anything notable that isn't tracked (a vet visit, a new
    chew, eating all his dinner, the weather, who was around). Confidence
    is `high` when they said it plainly, lower when you inferred or they were
