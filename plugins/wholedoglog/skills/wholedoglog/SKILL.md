@@ -63,13 +63,16 @@ ahead". Open in one message:
    the day before's, to jog their memory. If days were missed, say how
    many and show the last one recorded instead; don't ask them to fill
    each one in.
-3. The standing areas as a short list, one line each with what to think
-   about, so they can glance back at it while they talk. Put the one or two
-   things live recently first, by name, and say which matters most today.
-4. The meds you're assuming are unchanged since yesterday, by name and
-   dose, and ask to hear if anything was different (a missed dose, a vet's
-   change, something new). Then any other defaults (food,
-   supplements), once. Don't ask about those.
+3. What to cover, with `render_block` cover for the day: the standing
+   topics drawn as the app draws them, so they can glance back while they
+   talk. Pass up to four `nudges`, the things from the last couple of weeks
+   worth asking after (from `get_due`'s recent days and concerns), each with
+   the day it came up and a short question in your words; mark one `worry`
+   when it's something to watch. The topics come from the trackers, so
+   don't list them again in the chat. Say in a line which matters most today.
+4. The card's last line names what you're assuming unchanged (meds, food).
+   Say once that you'd like to hear if anything was different (a missed
+   dose, a vet's change, something new). Don't ask about each.
 5. Then hand over: whenever they're ready, however it comes out.
 
 If a gap is worth filling, ask about it lightly. If weather or other
