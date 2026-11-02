@@ -41,7 +41,8 @@ When there's no dog yet:
 4. Each yes becomes a tracker (`create_tracker`, origin `asked`), made as
    under "Making a tracker" below.
 5. If they already keep a record (a spreadsheet, notes), bring it in as under
-   "Bringing in an old record" below.
+   "Bringing in an old record" below. If they want to keep it going as well,
+   see "Keeping their own log".
 6. Offer a regular check-in. You can't schedule it yourself, so give them the
    text of a scheduled task to create, for example "Every day at 8:30pm:
    check in with me about [the dog's name] using WholeDogLog."
@@ -85,3 +86,28 @@ source `import`, and its facts pointing at it. Give each call a `key` so a
 retry writes nothing twice. Check what comes back against the record: the
 counts, anything refused, and the gaps. A day the record leaves blank stays
 blank.
+
+## Keeping their own log
+
+Some owners already track their dog some other way, often with an
+assistant: a sheet it fills in, a notes app, a running chat, a calendar,
+something they send the vet. While they try WholeDogLog they may want to
+keep that going too, and they should never have to tell you the day twice.
+You do both, in parallel: WholeDogLog first, then whatever they did before.
+
+1. Ask whether they keep track of the dog anywhere else they'd like kept
+   going, when they mention it or while setting up. Don't assume what it is
+   or how it works.
+2. Find out how they do it, without making them explain it all: look at
+   it yourself where you can reach it (through their own connector), and
+   use what you can see of how they've been doing it. Ask only for what's
+   left.
+3. Say back in a line or two what you'll do for it after each check-in,
+   and ask whether there's anything else you should know.
+4. Save it with `set_other_log`, in your words: what it is, where, and
+   enough to do it again without asking, including what they told you.
+   Every later chat gets it from `get_household`.
+
+Each check-in then does it too (see the skill). Do it their way, not
+ours: it's theirs. Change the note with `set_other_log` when they change
+how it works, and send `null` when they want to stop.
