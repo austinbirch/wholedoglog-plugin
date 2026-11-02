@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `777111fa`. Call `get_household` with `skillVersion: "777111fa"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `470f5012`. Call `get_household` with `skillVersion: "470f5012"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -160,7 +160,7 @@ catch-up, in `setup.md`.
 
 When they ask for settings, their account, to change a photo, or to delete
 their account or data, show `settings`. Deleting is theirs to do, in that
-card, by typing their first dog's name; you can't, so never say you have.
+card, by typing "delete account"; you can't, so never say you have.
 It happens seven days later, and until then they can keep the account from
 the same card. If `get_household` says the account is being deleted, mention
 it once, in a line, and carry on. Without cards, give them the account page
