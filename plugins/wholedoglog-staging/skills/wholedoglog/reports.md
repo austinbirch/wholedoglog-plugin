@@ -21,7 +21,7 @@ pattern or a change, for the dashboard, or for outside data such as weather.
   numbers and the owner's own words. A wall of text after one card says
   the card twice and buries the points it could have shown.
   - The built-ins, the same every time, for the questions every owner
-    asks: review (a day, "show me today"), days ("how's his week been?"),
+    asks: review (a day's report card, "show me today" or "how was yesterday?"), days ("how's his week been?"),
     month ("how was October?"), overview (the front of their diary, "open
     his diary"), watching (what you watch for them), log (what they said,
     day by day), and the dashboard (`get_view`, below).

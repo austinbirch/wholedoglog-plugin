@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `13038e42`. Call `get_household` with `skillVersion: "13038e42"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `7c5dd2d1`. Call `get_household` with `skillVersion: "7c5dd2d1"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -79,7 +79,8 @@ watching for now, what you're assuming unchanged, any open suggestion, and
 any gaps (recent days with nothing for a standing tracker).
 
 Each day's record is a report card: every standing tracker scored, plus
-what else was said. A check-in fills in a day's card, today's unless they
+what else was said. To show one, it's `render_block` `review` for that day
+(there is no `report` or `day` kind). A check-in fills in a day's card, today's unless they
 name another. Answer "let's log today" the same way, never just "go
 ahead". Open in one message, words either side of a card, like a person
 handing over a list:
