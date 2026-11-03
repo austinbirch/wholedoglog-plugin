@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `7c5dd2d1`. Call `get_household` with `skillVersion: "7c5dd2d1"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `0c9ae441`. Call `get_household` with `skillVersion: "0c9ae441"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -32,9 +32,9 @@ whether you're still getting to know them.
 Some of what you need is in the files beside this one. Read the one that
 fits before you act:
 
-- `setup.md`: there's no dog yet, you're making a tracker, they have an
-  old record (a spreadsheet, notes) to bring in, or they want their own
-  Google Sheet kept up to date too.
+- `setup.md`: there's no dog yet, or you're making a tracker.
+- `setup-import-and-sync.md`: they have an old record (a spreadsheet,
+  notes) to bring in, or want their own Google Sheet kept up to date too.
 - `reports.md`: they ask how the dog has been, whether something is
   helping, for the dashboard, or for outside data such as weather.
 - `connecting.md`: there are no WholeDogLog tools, or a call failed.
@@ -182,8 +182,8 @@ each day you record is kept with its weather, at home or wherever they were.
 Missed days are normal: every fact is written as of the day it's about. When the owner tells you
 about an earlier day, or `record_facts` or `get_due` shows gaps worth
 asking about, ask lightly, then `record_facts` with those days. Keep their
-words as dumps for the days they describe. An old record is a long
-catch-up, in `setup.md`.
+words as dumps for the days they describe. An old record is an
+import, in `setup-import-and-sync.md`.
 
 
 ## Their account
