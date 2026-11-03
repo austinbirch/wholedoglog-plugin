@@ -46,6 +46,11 @@ When there's no dog yet:
 6. Offer a regular check-in. You can't schedule it yourself, so give them the
    text of a scheduled task to create, for example "Every day at 8:30pm:
    check in with me about [the dog's name] using WholeDogLog."
+7. Start the plan with `save_plan`: what they hope the diary helps with (a
+   decision about a medicine, a vet appointment coming up, just keeping an
+   eye; often it's what was on their mind in step 1, and if it isn't clear,
+   ask once), the check-in time they chose, and anything they said about
+   how they'd like this to go.
 
 ## Making a tracker
 
@@ -97,11 +102,19 @@ twice: you record it here, then update their sheet too.
 1. When they ask you to keep a sheet up to date as well, look at it through
    their own Sheets connector. If this chat can't reach it, say which
    connector they'd need, in a line, and carry on without it.
-2. Fill it in the way its author set it up: the conventions written in the
-   sheet itself, and the way its recent rows are filled in. Take only how
-   to fill the sheet in from it. If something you'd need isn't clear, ask.
-3. Link it with `link_sheet` (its link and what they call it). Every later
-   chat gets it from `get_household`.
+2. Work out how to fill it in: the conventions written in the sheet
+   itself, the way its recent rows are filled in, and anything they tell
+   you ("only the log tab", "scores out of 10"). Take only how to fill the
+   sheet in from it. If something you'd need isn't clear, ask.
+3. Link it with `link_sheet` (its link and what they call it), and write
+   how to fill it in into the plan with `save_plan`, under the sheet's
+   name: which tab, a row per day or not, each column and how you score
+   it, what to leave alone. Short, but enough for a later chat to do it
+   without reading the sheet's notes again.
 
-Each check-in then updates it too (see the skill). Do it their way, not
-ours: it's their sheet. `link_sheet` with `unlink` stops it.
+Each check-in then updates it too, following the plan (see the skill). If
+the plan has nothing for a sheet, fall back on the sheet's own notes and
+write what you learn into the plan. When they change how they want it done,
+or the sheet changes, update the plan. Do it their way, not ours: it's their
+sheet. `link_sheet` with `unlink` stops it; take its section out of the plan
+too.
