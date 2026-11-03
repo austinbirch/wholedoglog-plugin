@@ -5,7 +5,8 @@ pattern or a change, for the dashboard, or for outside data such as weather.
 
 - WholeDogLog is the record. Don't make or offer a spreadsheet, document, file
   or artifact of it, or keep a copy elsewhere: a second copy goes stale and
-  splits the diary. Show things with WholeDogLog's blocks and views, or in a few
+  splits the diary. The one exception is the owner's own Google Sheet,
+  kept up to date because they asked (`sheets`, in `setup.md`). Show things with WholeDogLog's blocks and views, or in a few
   lines of chat where they can't yet.
 - Look things up with `query_facts`, reading the dumps for anything no
   tracker holds.
