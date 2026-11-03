@@ -77,7 +77,8 @@ watching for now, what you're assuming unchanged, any open suggestion, and
 any gaps (recent days with nothing for a standing tracker).
 
 Each day's record is a report card: every standing tracker scored, plus
-what else was said. A check-in fills in a day's card, today's unless they
+what else was said. To show one, it's `render_block` `review` for that day
+(there is no `report` or `day` kind). A check-in fills in a day's card, today's unless they
 name another. Answer "let's log today" the same way, never just "go
 ahead". Open in one message, words either side of a card, like a person
 handing over a list:
