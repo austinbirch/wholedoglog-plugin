@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `06853379`. Call `get_household` with `skillVersion: "06853379"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `2ff1aa7d`. Call `get_household` with `skillVersion: "2ff1aa7d"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has testing tools, `reset` (some days, one dog, or the whole household) and `set_test_day`; if you can't see them, search your tools for them by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -33,8 +33,8 @@ Some of what you need is in the files beside this one. Read the one that
 fits before you act:
 
 - `setup.md`: there's no dog yet, you're making a tracker, they have an
-  old record (a spreadsheet, notes) to bring in, or they keep track some
-  other way and want to carry on with it.
+  old record (a spreadsheet, notes) to bring in, or they want their own
+  Google Sheet kept up to date too.
 - `reports.md`: they ask how the dog has been, whether something is
   helping, for the dashboard, or for outside data such as weather.
 - `connecting.md`: there are no WholeDogLog tools, or a call failed.
@@ -117,10 +117,11 @@ each day you record is kept with its weather, at home or wherever they were.
    come in words, never a tap: their reason is worth keeping, so
    `record_dump` what they said for that day, then `correct_fact` with the
    new score and a note of why. It supersedes; nothing is edited or deleted.
-   If `get_household` has an `otherLog`, they keep track some other way
-   too: now do that for the day as well, the way its note says, and say so
-   in a few words. A correction goes there too. If you can't do it from
-   this chat, tell them once and carry on.
+   If `get_household` lists `sheets`, they keep a Google Sheet up to date
+   too: now update each for the day through their own Sheets connector,
+   following the conventions its author set in it, and say so in a few
+   words. A correction goes there too. If you can't reach it from this
+   chat, tell them once and carry on.
 5. Meds belong on every day's card. A change (a new drug, a dose up or
    down, one stopped) is a `meds` fact as of the day it happened, holding
    the whole new list; say it back, since it can change everything after.
