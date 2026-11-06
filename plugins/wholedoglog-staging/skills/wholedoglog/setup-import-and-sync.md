@@ -16,9 +16,9 @@ so in a line, unless they say they'd rather not.
 It goes in as one import, with one card:
 
 1. Say it takes a few minutes and the card shows how it's going.
-2. `render_block` kind `import`: what they call it ("Bramble's sheet") and
+2. `show` `import`: what they call it ("Bramble's sheet") and
    its first and last day.
-3. `import_days` with the same `import`, oldest first, about three weeks a
+3. `record` with the same `import`, oldest first, about three weeks a
    call, a row per day: its notes as given, each tracker's value by key
    (`"values": {"sleep": 4, "stool": "firm"}`), anything notable as
    `events`. A `key` per call; `last: true` on the last. A blank day stays
@@ -42,12 +42,12 @@ their sheet too.
 2. Work out how to fill it in from the conventions written in the sheet,
    its recent rows, and what they tell you ("only the log tab"). If
    something isn't clear, ask.
-3. `link_sheet` (its link and name), and `save_plan` how to fill it in
+3. `household` with `sheet` (its link and name), and its `plan` saying how to fill it in
    under the sheet's name: the tab, a row per day or not, each column and
    how you score it, what to leave alone. Enough for a later chat to do it
    without reading the sheet's notes.
 
 Each check-in then updates it, following the plan. When they change how they
 want it done, or the sheet changes, update the plan. It's their sheet: do it
-their way. `link_sheet` with `unlink` stops it; take its section out of the
+their way. `household`'s `sheet` with `unlink` stops it; take its section out of the
 plan too.
