@@ -32,5 +32,17 @@ in again. If anything is missing, Claude says so and walks you through it.
 
 What you tell Claude about your dog, in your words, and what Claude records
 from it (scores, notes, the things it watches) go to WholeDogLog's server, under
-the email you signed in with. WholeDogLog never runs an AI model of its own and
-sees nothing from your chats except what Claude sends to its tools.
+the email you signed in with, with any photos you upload and roughly where home
+is, for the weather. WholeDogLog never runs an AI model of its own and
+sees nothing from your chats except what Claude sends to its tools. The cards
+WholeDogLog shows in the chat send usage, errors and masked session replays to
+PostHog. You can download everything or delete your account at any time.
+
+The full list of what's kept, who handles it and for how long is in the
+[privacy policy](https://wholedoglog.com/privacy). Terms are at
+[wholedoglog.com/terms](https://wholedoglog.com/terms), and help at
+[wholedoglog.com/help](https://wholedoglog.com/help).
+
+## Support
+
+Write to support@wholedoglog.com.
