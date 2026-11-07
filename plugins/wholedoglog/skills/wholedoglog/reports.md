@@ -21,7 +21,7 @@ pattern or a change, for the dashboard, or for outside data such as weather.
   numbers and the owner's own words. A wall of text after one card says
   the card twice and buries the points it could have shown.
   - The built-ins, the same every time, for the questions every owner
-    asks: review (a day's report card, "show me today" or "how was yesterday?"), days ("how's his week been?"),
+    asks: review (a day's report card, "show me today" or "how was yesterday?"), days (which days were good or harder, "which days were bad this week?"),
     month ("how was October?"), overview (the front of their diary, "open
     his diary"), watching (what you watch for them), log (what they said,
     day by day), and the dashboard (below). Each is a `show` card.
@@ -36,6 +36,18 @@ pattern or a change, for the dashboard, or for outside data such as weather.
     did: "sick on 2 of the last 7 days", "12 days without"). A series draws
     weight and counts too, with their units, and a choice whose options run
     best to worst.
+  - "How's his week been?" (or fortnight) is a series of the topics asked
+    every day over those days, oldest on the left, with the meds changes
+    marked, under one line of yours that says the shape of it ("three harder
+    days midweek, settling by the weekend"). Highs and lows show at a glance
+    on a chart; a list of days makes the owner read seven rows to see it.
+    Add the days card after it only if they ask which days, or a day stands
+    out enough to open.
+  - A day's words (good, ordinary, harder) are the whole day; one topic can
+    still have been bad on an ordinary day. When you mention a day, say both
+    the same way the card does, "an ordinary day, though his poo was bad",
+    never "an ordinary day" alone when one topic was at the bottom of its
+    scale.
   - Several in one reply when you're walking through it: a card, a line of
     yours, the next card ("here's October… and here's his sleep across
     it"). Built-ins and pieces mix freely.
