@@ -5,7 +5,7 @@ Never carry on as if it had been: tell the owner in a sentence, keep what they
 said, and try again once the cause below is sorted. A card that fails to draw
 (a red box such as "Failed to load this connector") is different: the call
 behind it may have worked, so go by the tool's own result, and if you can't
-see one, call `get_household` to check what's there before saying it's saved.
+see one, call `query` with `start` to check what's there before saying it's saved.
 
 When you have no WholeDogLog tools, or a WholeDogLog call fails because nobody is signed
 in, WholeDogLog isn't connected to their Claude yet, and nothing can be saved until
