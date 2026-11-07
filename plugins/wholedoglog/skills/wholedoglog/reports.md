@@ -87,7 +87,7 @@ and pressure for any days, each at wherever they were that day (home, or
 that day's place fact). Each day is kept as it's recorded, so reading is
 quick. It needs a home. If `start` has none, ask where they live in
 plain words ("a town or village is plenty"), turn it into coordinates
-yourself, and save it with `household`'s `home`; WholeDogLog doesn't look
+yourself, and save it with `household`'s `home` and its `timeZone`; WholeDogLog doesn't look
 places up. Home is the household's, for every day; a day somewhere else is a
 place fact on that day, corrected like any other.
 
