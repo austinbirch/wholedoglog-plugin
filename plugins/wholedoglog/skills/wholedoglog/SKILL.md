@@ -31,9 +31,10 @@ know them, and what's `due` today for each dog.
 WholeDogLog has five tools: `query` reads, `show` draws a card, `record`
 keeps the owner's words and facts, `tracker` changes what's watched, and
 `household` changes the dog, home, plan, linked sheets and dashboard. Each
-takes a `kind` or `action` for what you want. A tool's result may say how to
-use that tool now; where it differs from this skill, follow the result:
-it's newer.
+takes a `kind` or `action` for what you want. Send `toolsVersion` with
+every call, exactly as each tool's schema gives it: that's how WholeDogLog
+knows what this chat can see. A tool's result may say how to use that tool
+now; where it differs from this skill, follow the result: it's newer.
 
 Some of what you need is in the files beside this one. Read the one that
 fits before you act:
