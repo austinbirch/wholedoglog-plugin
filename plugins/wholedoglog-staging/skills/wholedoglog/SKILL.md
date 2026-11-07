@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `fe417f5a`. Call `query` with `kind: "start"`, `skillVersion: "fe417f5a"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `31ee55b2`. Call `query` with `kind: "start"`, `skillVersion: "31ee55b2"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -28,7 +28,9 @@ emergency vet now, before anything else. Record it afterwards.
 Call `query` with `start` first, in every new chat, even a scheduled one,
 with `day` today. It's everything to get going: who is in the household,
 their dogs and what you watch for each, whether you're still getting to
-know them, and what's `due` today for each dog.
+know them, and what's `due` today for each dog. Once home has its time
+zone, `start` gives `today` too: that's the owner's today, wherever you
+think the date is, and it moves on in a chat that runs over days.
 
 WholeDogLog has five tools: `query` reads, `show` draws a card, `record`
 keeps the owner's words and facts, `tracker` changes what's watched, and
