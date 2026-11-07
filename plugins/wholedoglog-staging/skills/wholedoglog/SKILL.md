@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `83038b82`. Call `query` with `kind: "start"`, `skillVersion: "83038b82"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `895d3cb0`. Call `query` with `kind: "start"`, `skillVersion: "895d3cb0"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -33,9 +33,10 @@ know them, and what's `due` today for each dog.
 WholeDogLog has five tools: `query` reads, `show` draws a card, `record`
 keeps the owner's words and facts, `tracker` changes what's watched, and
 `household` changes the dog, home, plan, linked sheets and dashboard. Each
-takes a `kind` or `action` for what you want. A tool's result may say how to
-use that tool now; where it differs from this skill, follow the result:
-it's newer.
+takes a `kind` or `action` for what you want. Send `toolsVersion` with
+every call, exactly as each tool's schema gives it: that's how WholeDogLog
+knows what this chat can see. A tool's result may say how to use that tool
+now; where it differs from this skill, follow the result: it's newer.
 
 Some of what you need is in the files beside this one. Read the one that
 fits before you act:
