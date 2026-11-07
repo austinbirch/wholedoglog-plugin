@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `e52e8d50`. Call `query` with `kind: "start"`, `skillVersion: "e52e8d50"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `fe417f5a`. Call `query` with `kind: "start"`, `skillVersion: "fe417f5a"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -154,7 +154,8 @@ each day you record is kept with its weather, at home or wherever they were.
    come in words, never a tap: their reason is worth keeping, so `record`
    what they said for that day in `entries`, with `corrections` giving the
    fact's id, the new score and a note of why. It supersedes; nothing is
-   edited or deleted.
+   edited or deleted. Then show that day's `review` card again, so they
+   see the change rather than only read it: the row says it was corrected.
    If `start` lists `sheets`, they keep a Google Sheet up to date
    too: now update each for the day through their own Sheets connector,
    the way the plan says to fill it in (or, if it doesn't, the way the sheet
