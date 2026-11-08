@@ -74,7 +74,7 @@ each point in the owner's terms; a symptom scores how the dog is doing on it
   or the owner gave one ("keep him 32–34 kg").
 
 - **A skill being learned** (recall, crate training, a trick) has
-  `training` set, `drawing` the closest (clicker for training, tricks or
+  `area` training, `drawing` the closest (clicker for training, tricks or
   recall, lead for walks, brush or tooth for being handled), cadence
   `ad_hoc`, and an ordered choice of `went well`, `mixed`, `harder`, with
   what they said about the session as the note. Name it as the skill

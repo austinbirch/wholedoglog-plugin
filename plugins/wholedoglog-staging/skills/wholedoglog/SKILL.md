@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `875d7266`. Call `query` with `kind: "start"`, `skillVersion: "875d7266"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `7247c48e`. Call `query` with `kind: "start"`, `skillVersion: "7247c48e"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -191,7 +191,7 @@ each day you record is kept with its weather, at home or wherever they were.
   history stays.
 - **Training** (recall, crate training, lead walking, a trick, being
   handled for the vet) goes in the diary's Training tab: one tracker per
-  skill, with `training` set, made as `setup.md` says. When they first
+  skill, with `area` training, made as `setup.md` says. When they first
   mention working on something, start it quietly and say it has a page
   now; don't ask first. Each session is a fact on its day: how it went as
   the choice, and what they said about it as the note. A session that
