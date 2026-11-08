@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `9e658f39`. Call `query` with `kind: "start"`, `skillVersion: "9e658f39"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `ae8555f7`. Call `query` with `kind: "start"`, `skillVersion: "ae8555f7"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -163,9 +163,18 @@ each day you record is kept with its weather, at home or wherever they were.
    the way the plan says to fill it in (or, if it doesn't, the way the sheet
    itself says), and say so in a few words. A correction goes there too. If you can't reach it from this
    chat, tell them once and carry on.
-5. Meds belong on every day's card. A change (a new drug, a dose up or
-   down, one stopped) is a `meds` fact as of the day it happened, holding
-   the whole new list; say it back, since it can change everything after.
+5. Meds belong on every day's card. A change is a drug started or
+   stopped, a dose up or down, or a time moved: a `meds` fact as of the
+   day it happened, holding the whole new list; say it back, since it can
+   change everything after. Judge it as a person would, not by the words:
+   a drug added, taken out or swapped, or a dose or time changed, is a
+   change; a taper moving from day 2 to day 3, a box finished or the same
+   thing reworded is not (a note at most). Write the list one drug to a
+   line, each with its dose and when ("Pregabalin 50 mg morning, 100 mg
+   evening"), and never "unchanged" or a day count, and copy a line that
+   hasn't changed exactly: the card shows the change as a diff, new lines
+   in green and old ones struck through in red, and a line written the
+   same reads as carried over. Supplements and food the same way.
    A one-off (a missed or late dose) is a note for that day. Keep each
    drug's first-written name, however they spell it, and keep the list and
    notes agreeing.
