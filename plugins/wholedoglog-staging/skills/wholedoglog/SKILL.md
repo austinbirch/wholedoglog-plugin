@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `ae8555f7`. Call `query` with `kind: "start"`, `skillVersion: "ae8555f7"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `67220844`. Call `query` with `kind: "start"`, `skillVersion: "67220844"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -206,6 +206,15 @@ each day you record is kept with its weather, at home or wherever they were.
   the choice, and what they said about it as the note. A session that
   mixes two goes to the one it's mostly about. "How's his training
   going?" is the `training` card.
+  When they ask to sort training out of earlier days (the empty Training
+  tab has a button that asks it for them), read their words with query's
+  `facts` and `entries` a few months at a time, start a tracker for each
+  thing they were working on, and record each session on its day with
+  `medium` confidence and a note that it came from earlier notes. An old
+  catch-all tracker it all came from (one called "Training", say) is
+  retired with `tracker` `change` once its sessions are filed; its history
+  stays. Then show the `training` card and ask whether anything's in the
+  wrong place.
 - **A new tracker can be filled backwards** from earlier entries, if they'd
   like. Use lower confidence and say in the note that it came from the
   notes. A day the entries don't mention stays empty, never a zero.
