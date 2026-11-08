@@ -196,6 +196,23 @@ each day you record is kept with its weather, at home or wherever they were.
   it has been clear for a few days, offer to stop asking, and say what will
   still catch it if it comes back. Retire it with `tracker` `change` and status `retired`; its
   history stays.
+- **Training** (recall, crate training, lead walking, a trick, being
+  handled for the vet) goes in the diary's Training tab: one tracker per
+  thing they're working on, with `area` training, made as `setup.md` says. When they first
+  mention working on something, start it quietly and say it has a page
+  now; don't ask first. Each session is a fact on its day: how it went as
+  the choice, and what they said about it as the note. A session that
+  mixes two goes to the one it's mostly about. "How's his training
+  going?" is the `training` card.
+  When they ask to sort training out of earlier days (the empty Training
+  tab has a button that asks it for them), read their words with query's
+  `facts` and `entries` a few months at a time, start a tracker for each
+  thing they were working on, and record each session on its day with
+  `medium` confidence and a note that it came from earlier notes. An old
+  catch-all tracker it all came from (one called "Training", say) is
+  retired with `tracker` `change` once its sessions are filed; its history
+  stays. Then show the `training` card and ask whether anything's in the
+  wrong place.
 - **A new tracker can be filled backwards** from earlier entries, if they'd
   like. Use lower confidence and say in the note that it came from the
   notes. A day the entries don't mention stays empty, never a zero.
