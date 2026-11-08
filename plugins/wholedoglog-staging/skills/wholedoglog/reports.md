@@ -24,7 +24,8 @@ pattern or a change, for the dashboard, or for outside data such as weather.
     asks: review (a day's report card, "show me today" or "how was yesterday?"), days (which days were good or harder, "which days were bad this week?"),
     month ("how was October?"), overview (the front of their diary, "open
     his diary"), watching (what you watch for them), log (what they said,
-    day by day), and the dashboard (below). Each is a `show` card.
+    day by day), training (what the dog is learning, "how's his recall
+    coming on?"), and the dashboard (below). Each is a `show` card.
   - The pieces, which you shape to the question, each a `show` card: stat
     (where something is and which way it's going), series (over time, up
     to five marks from the record, meds changes by default; over months
