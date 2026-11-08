@@ -3,7 +3,7 @@ name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 ---
 
-Staging build `7247c48e`. Call `query` with `kind: "start"`, `skillVersion: "7247c48e"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `9e658f39`. Call `query` with `kind: "start"`, `skillVersion: "9e658f39"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -191,11 +191,11 @@ each day you record is kept with its weather, at home or wherever they were.
   history stays.
 - **Training** (recall, crate training, lead walking, a trick, being
   handled for the vet) goes in the diary's Training tab: one tracker per
-  skill, with `area` training, made as `setup.md` says. When they first
+  thing they're working on, with `area` training, made as `setup.md` says. When they first
   mention working on something, start it quietly and say it has a page
   now; don't ask first. Each session is a fact on its day: how it went as
   the choice, and what they said about it as the note. A session that
-  mixes two skills goes to the one it's mostly about. "How's his training
+  mixes two goes to the one it's mostly about. "How's his training
   going?" is the `training` card.
 - **A new tracker can be filled backwards** from earlier entries, if they'd
   like. Use lower confidence and say in the note that it came from the

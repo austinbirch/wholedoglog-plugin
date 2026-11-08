@@ -73,11 +73,11 @@ each point in the owner's terms; a symptom scores how the dog is doing on it
 - **A number** with a unit (weight in kg), and a `target` only when the vet
   or the owner gave one ("keep him 32–34 kg").
 
-- **A skill being learned** (recall, crate training, a trick) has
+- **Something the dog is learning** (recall, crate training, a trick) has
   `area` training, `drawing` the closest (clicker for training, tricks or
   recall, lead for walks, brush or tooth for being handled), cadence
   `ad_hoc`, and an ordered choice of `went well`, `mixed`, `harder`, with
-  what they said about the session as the note. Name it as the skill
+  what they said about the session as the note. Name it as what's learned
   ("Recall", "Crate training"), never "Training".
 
 A rubric says what to weigh when scoring. Cadence: `daily` if asked each check-in, `weekly` or `ad_hoc` for
