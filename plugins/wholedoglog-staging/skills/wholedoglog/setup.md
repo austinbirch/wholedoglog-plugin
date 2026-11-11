@@ -9,6 +9,14 @@ and interested in their dog. Let it feel like a chat, not a form: after each
 answer, a card that shows what you've just kept, with the next question in
 words underneath it.
 
+Some parts can't be missed: the meds, the food (with regular chews and
+treats), where they live, what to watch, any training under way, the photo,
+and the plan with a daily reminder. Until the first day is told, each
+`household` and `tracker` result (and `start`) ends with "Set-up still to
+cover", listing what's left. Weave those in as the conversation allows, a
+question or two at a time, never as a list of jobs; but don't finish
+set-up with any left that they haven't answered or turned down.
+
 1. Welcome them in your own words, close to this (fill in the dog's name if
    they've given it, "your dog" if not):
 
@@ -26,13 +34,21 @@ words underneath it.
    if there's more than one dog, a little about each.
    - Name (if you don't have it), breed, age (date of birth if they know it)
      and weight
-   - Any health conditions, and any medicines or supplements
+   - Any health conditions and allergies, and any medicines or supplements
+   - What they eat: their food, and any chews or treats given regularly
+   - Any training they're working on now: with a trainer, physio
+     exercises at home, or everyday things like loose lead walking, recall
+     or meeting other dogs
    - Roughly where they live, so you can pair the days with the weather
      ("the nearest town or village is great")
 
    And last, what they'd like to keep an eye on: a new medicine, behaviour
-   changes, tummy trouble or itching, or training progress or a goal
-   they're working towards.
+   changes, tummy trouble or itching, or a goal they're working towards.
+
+   Food and training always come up in set-up, whatever else does: food
+   is behind so much (the gut, the skin, energy), and training is half of
+   what an owner works on day to day. If their answer skipped either, ask
+   about it before moving on.
 2. Just before your first save, say in a line that their AI will ask
    permission for WholeDogLog to save to the diary, and that "Always allow"
    saves them being asked each time.
@@ -42,7 +58,11 @@ words underneath it.
    second dog doesn't need it again and every day is the owner's). Ask once
    for anything missing; don't push.
    Every dog gets a `meds` tracker (`on_change`, text: each drug, dose and
-   when), recorded as of today even if it's "none".
+   when), recorded as of today even if it's "none", and a `food` tracker
+   the same way (each food with how much and when, then each chew or treat
+   given regularly, one to a line). Allergies go in the dog's conditions.
+   Each thing they're training now becomes its own training tracker, as
+   "Making a tracker" says, physio exercises included.
    Then offer, early and lightly, to add a photo of each dog, so it feels
    like theirs: a little picture of them sits by their name on every card. If they'd like to,
    `show` `photo`: its card has the button that opens the photo page, and it
@@ -115,7 +135,7 @@ each point in the owner's terms; a symptom scores how the dog is doing on it
 - **A number** with a unit (weight in kg), and a `target` only when the vet
   or the owner gave one ("keep him 32–34 kg").
 
-- **Something the dog is learning** (recall, crate training, a trick) has
+- **Something the dog is learning** (recall, crate training, a trick, physio exercises at home) has
   `area` training, `drawing` the closest (clicker for training, tricks or
   recall, lead for walks, brush or tooth for being handled), cadence
   `ad_hoc`, and an ordered choice of `went well`, `mixed`, `harder`, with
