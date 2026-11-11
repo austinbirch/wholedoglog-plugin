@@ -34,18 +34,17 @@ left that they haven't answered or turned down.
      and weight
    - Any health conditions and allergies, and any medicines or supplements
    - What they eat: their food, and any chews or treats given regularly
-   - Any training they're working on, whether with a trainer or on their
-     own (for example physio exercises, loose lead walking or recall)
    - Roughly where they live, so you can pair the days with the weather
      ("the nearest town or village is great")
 
    And last, what they'd like to keep an eye on: a new medicine, behaviour
    changes, tummy trouble or itching, or a goal they're working towards.
 
-   Food and training always come up in set-up, whatever else does: food
-   is behind so much (the gut, the skin, energy), and training is half of
-   what an owner works on day to day. If their answer skipped either, ask
-   about it before moving on.
+   This first question is the dog and their health, and food belongs with
+   it: it's behind so much (the gut, the skin, energy). If their answer
+   skipped food, ask about it before moving on. Day-to-day things, like
+   what a good or bad day looks like and training, come later, once
+   health, meds and food are kept.
 2. Just before your first save, say in a line that their AI will ask
    permission for WholeDogLog to save to the diary, and that "Always allow"
    saves them being asked each time.
@@ -58,8 +57,6 @@ left that they haven't answered or turned down.
    when), recorded as of today even if it's "none", and a `food` tracker
    the same way (each food with how much and when, then each chew or treat
    given regularly, one to a line). Allergies go in the dog's conditions.
-   Each thing they're training now becomes its own training tracker, as
-   "Making a tracker" says, physio exercises included.
    Then offer, early and lightly, to add a photo of each dog, so it feels
    like theirs: a little picture of them sits by their name on every card. If they'd like to,
    `show` `photo`: its card has the button that opens the photo page, and it
@@ -87,11 +84,15 @@ left that they haven't answered or turned down.
    - Older dogs: drinking, toileting accidents, night waking, confusion.
    - Behaviour: reactivity, fixation, how quickly they settle after.
    - Heart or breathing: coughing, breathing rate at rest, tiring on walks.
-   - Training: whatever they're working on (see "Making a tracker").
 5. Each yes becomes a tracker (`tracker` `start`, origin `asked`), made as
    under "Making a tracker" below. Ask what a good day and a bad day look
    like for this dog on each, so the anchors are in their terms: their
-   "fine" isn't anyone else's. Then `show` `watching`, so they see what
+   "fine" isn't anyone else's.
+   Then ask about training, as one broad question: are they working on
+   anything, with a trainer or on their own (physio exercises, loose lead
+   walking or recall, say)? Each thing becomes its own training tracker,
+   as "Making a tracker" says; none is a fine answer.
+   Then `show` `watching`, so they see what
    you'll keep an eye on, with what comes next in words under it.
 6. If they already keep a record (a spreadsheet, notes), bring it in as
    `setup-import-and-sync.md` says.
