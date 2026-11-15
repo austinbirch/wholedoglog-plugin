@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "a16fc442"
+  version: "7344488b"
 ---
 
-Staging build `32b68715`. Call `query` with `kind: "start"`, `skillVersion: "32b68715"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `8c520355`. Call `query` with `kind: "start"`, `skillVersion: "8c520355"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -113,8 +113,7 @@ handing over a list:
    them again in the chat. Don't show a report card here, not the day
    before's or the last one recorded: the day's own card comes once
    they've told you, and it links back to the others. With more than one
-   dog, show a `cover` for each dog with anything due, one after the
-   other, each naming its `dog`.
+   dog, leave `dog` out: one card holds every dog's cover side by side.
 3. Then a line or two after the card: the card's last line names what
    you're assuming unchanged (meds, food), so say once that you'd like to
    hear if anything was different (a missed dose, a vet's change, something
