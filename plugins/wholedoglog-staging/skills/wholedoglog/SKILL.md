@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "65d145aa"
+  version: "0f7af155"
 ---
 
-Staging build `1785ae40`. Call `query` with `kind: "start"`, `skillVersion: "1785ae40"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `1265563a`. Call `query` with `kind: "start"`, `skillVersion: "1265563a"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -41,6 +41,14 @@ takes a `kind` or `action` for what you want. Send `toolsVersion` with
 every call, exactly as each tool's schema gives it: that's how WholeDogLog
 knows what this chat can see. A tool's result may say how to use that tool
 now; where it differs from this skill, follow the result: it's newer.
+
+With more than one dog, be clear which dog you mean, the way a friend who
+knows them both would be: name the dog, then "he" or "she" while it's
+plainly still that one, and the name again when it could be the other.
+Name the dog in every call that is about one, and leave `dog` out of
+`show` only to mean all of them. When you can't tell from what the owner
+said which dog something is about, ask before you record it, rather than
+guess.
 
 Some of what you need is in the files beside this one. Read the one that
 fits before you act:
@@ -112,7 +120,10 @@ handing over a list:
    something to watch. The topics come from the trackers, so don't list
    them again in the chat. Don't show a report card here, not the day
    before's or the last one recorded: the day's own card comes once
-   they've told you, and it links back to the others.
+   they've told you, and it links back to the others. With more than one
+   dog, leave `dog` out: one card covers them all, what's for all of them
+   first, then each dog's. Give a nudge `dogs` when it's about some of
+   them only.
 3. Then a line or two after the card: the card's last line names what
    you're assuming unchanged (meds, food), so say once that you'd like to
    hear if anything was different (a missed dose, a vet's change, something
@@ -131,6 +142,10 @@ each day you record is kept with its weather, at home or wherever they were.
    is yesterday). A chat can run over days, so don't assume today is
    still the day you last recorded: if there's any doubt which day it's
    for, check with them before you record.
+   With more than one dog, their words are about their day, not one dog:
+   a line can be about one dog, both or neither, so never split them or
+   ask them to talk about each dog in turn. Keep them whole, once, and
+   take each dog's facts from them.
 2. If something you'd score is genuinely unclear, ask in a short bulleted
    list, one gap per line, so they can scan it and answer in any order.
    Don't ask for the sake of it: "sounds like that's everything" is a good
@@ -150,7 +165,11 @@ each day you record is kept with its weather, at home or wherever they were.
    no tracker for anything notable that isn't tracked (a vet visit, a new
    chew, eating all his dinner, the weather, who was around). Confidence
    is `high` when they said it plainly, lower when you inferred or they were
-   vague. A tracker they didn't mention gets no fact: not mentioned isn't
+   vague. With more than one dog, it's one `record` call for all of them:
+   the words once in `entries`, and each fact naming its `dog`, scored
+   against that dog's own trackers. Something said about both ("both were
+   stiff after the long walk") is a fact for each; something about one is
+   that dog's alone. If it's unclear which dog they meant, ask. A tracker they didn't mention gets no fact: not mentioned isn't
    the same as fine. Nor does a yes/no they hedge ("probably", "I think
    he might have"): seen, not seen and not known are three different
    things, and a guess is the third. Their words stay in the entries.
@@ -160,7 +179,10 @@ each day you record is kept with its weather, at home or wherever they were.
    place's weather. If they've moved, set the new home with `household`'s
    `home` instead. Ask "did you move, or are you away?" if it isn't
    clear.
-4. Show the day's report card: `show` `review` for that day. Ask if
+4. Show the day's report card: `show` `review` for that day. With more
+   than one dog, leave `dog` out: one card holds every dog's day side by
+   side, with what they said once at the top. Name a dog only when the
+   check-in was about that dog alone. Ask if
    anything doesn't sit right; otherwise that's today done. Corrections
    come in words, never a tap: their reason is worth keeping, so `record`
    what they said for that day in `entries`, with `corrections` giving the
