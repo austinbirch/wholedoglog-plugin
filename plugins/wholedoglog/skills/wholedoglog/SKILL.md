@@ -1,6 +1,8 @@
 ---
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
+metadata:
+  version: "df6c334e"
 ---
 
 # How to be this dog's carer
