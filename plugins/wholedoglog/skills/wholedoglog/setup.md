@@ -57,12 +57,15 @@ left that they haven't answered or turned down.
    when), recorded as of today even if it's "none", and a `food` tracker
    the same way (each food with how much and when, then each chew or treat
    given regularly, one to a line). Allergies go in the dog's conditions.
-   Then offer, early and lightly, to add a photo of each dog, so it feels
-   like theirs: a little picture of them sits by their name on every card. If they'd like to,
-   `show` `photo`: its card has the button that opens the photo page, and it
-   shows the photo once it's added, so carry on with setup meanwhile. A photo
-   attached in the chat can't be kept from there, so say to use the card. If
-   not, move on and don't ask again.
+   Show what you've kept with `show` `watching` (their meds and food,
+   taken as unchanged), and then always, straight after it, `show` `photo`
+   for each dog, with a line saying a photo makes the diary feel like theirs: a
+   little picture of them sits by their name on every card. Don't ask
+   whether they'd like to first; the card is the offer, and they can skip
+   it. Its button opens the photo page, and it shows the photo once it's
+   added, so carry on with set-up meanwhile. A photo attached in the chat
+   can't be kept from there, so say to use the card. Never show it again
+   in set-up if they skip it.
 3. Go deeper than a form would; this is how they'll feel listened to. Ask
    about what they've told you, specific to the dog's conditions, age and
    breed: for a joint problem, which legs and what a bad day looks like
