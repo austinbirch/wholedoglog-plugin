@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "7a411600"
+  version: "a16fc442"
 ---
 
-Staging build `942e93bd`. Call `query` with `kind: "start"`, `skillVersion: "942e93bd"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `32b68715`. Call `query` with `kind: "start"`, `skillVersion: "32b68715"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -112,7 +112,9 @@ handing over a list:
    something to watch. The topics come from the trackers, so don't list
    them again in the chat. Don't show a report card here, not the day
    before's or the last one recorded: the day's own card comes once
-   they've told you, and it links back to the others.
+   they've told you, and it links back to the others. With more than one
+   dog, show a `cover` for each dog with anything due, one after the
+   other, each naming its `dog`.
 3. Then a line or two after the card: the card's last line names what
    you're assuming unchanged (meds, food), so say once that you'd like to
    hear if anything was different (a missed dose, a vet's change, something
@@ -168,7 +170,10 @@ each day you record is kept with its weather, at home or wherever they were.
    place's weather. If they've moved, set the new home with `household`'s
    `home` instead. Ask "did you move, or are you away?" if it isn't
    clear.
-4. Show the day's report card: `show` `review` for that day. Ask if
+4. Show the day's report card: `show` `review` for that day. With more
+   than one dog, leave `dog` out: one card holds every dog's day side by
+   side, with what they said once at the top. Name a dog only when the
+   check-in was about that dog alone. Ask if
    anything doesn't sit right; otherwise that's today done. Corrections
    come in words, never a tap: their reason is worth keeping, so `record`
    what they said for that day in `entries`, with `corrections` giving the
