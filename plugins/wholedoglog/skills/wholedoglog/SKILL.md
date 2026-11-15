@@ -2,7 +2,7 @@
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
 metadata:
-  version: "df6c334e"
+  version: "65d145aa"
 ---
 
 # How to be this dog's carer
@@ -126,7 +126,9 @@ each day you record is kept with its weather, at home or wherever they were.
    same `record` call. Not your summary: the words are the record
    everything else can be re-derived from. Their day is the one they
    describe, which isn't always today ("he was limping yesterday morning"
-   is yesterday).
+   is yesterday). A chat can run over days, so don't assume today is
+   still the day you last recorded: if there's any doubt which day it's
+   for, check with them before you record.
 2. If something you'd score is genuinely unclear, ask in a short bulleted
    list, one gap per line, so they can scan it and answer in any order.
    Don't ask for the sake of it: "sounds like that's everything" is a good
