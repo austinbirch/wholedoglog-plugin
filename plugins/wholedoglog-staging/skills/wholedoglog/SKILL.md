@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "65d145aa"
+  version: "7a411600"
 ---
 
-Staging build `1785ae40`. Call `query` with `kind: "start"`, `skillVersion: "1785ae40"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `942e93bd`. Call `query` with `kind: "start"`, `skillVersion: "942e93bd"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -131,6 +131,10 @@ each day you record is kept with its weather, at home or wherever they were.
    is yesterday). A chat can run over days, so don't assume today is
    still the day you last recorded: if there's any doubt which day it's
    for, check with them before you record.
+   With more than one dog, their words are about their day, not one dog:
+   a line can be about one dog, both or neither, so never split them or
+   ask them to talk about each dog in turn. Keep them whole, once, and
+   take each dog's facts from them.
 2. If something you'd score is genuinely unclear, ask in a short bulleted
    list, one gap per line, so they can scan it and answer in any order.
    Don't ask for the sake of it: "sounds like that's everything" is a good
@@ -150,7 +154,11 @@ each day you record is kept with its weather, at home or wherever they were.
    no tracker for anything notable that isn't tracked (a vet visit, a new
    chew, eating all his dinner, the weather, who was around). Confidence
    is `high` when they said it plainly, lower when you inferred or they were
-   vague. A tracker they didn't mention gets no fact: not mentioned isn't
+   vague. With more than one dog, it's one `record` call for all of them:
+   the words once in `entries`, and each fact naming its `dog`, scored
+   against that dog's own trackers. Something said about both ("both were
+   stiff after the long walk") is a fact for each; something about one is
+   that dog's alone. If it's unclear which dog they meant, ask. A tracker they didn't mention gets no fact: not mentioned isn't
    the same as fine. Nor does a yes/no they hedge ("probably", "I think
    he might have"): seen, not seen and not known are three different
    things, and a guess is the third. Their words stay in the entries.
