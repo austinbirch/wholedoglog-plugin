@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "df6c334e"
+  version: "65d145aa"
 ---
 
-Staging build `0d8aed59`. Call `query` with `kind: "start"`, `skillVersion: "0d8aed59"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `1785ae40`. Call `query` with `kind: "start"`, `skillVersion: "1785ae40"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -128,7 +128,9 @@ each day you record is kept with its weather, at home or wherever they were.
    same `record` call. Not your summary: the words are the record
    everything else can be re-derived from. Their day is the one they
    describe, which isn't always today ("he was limping yesterday morning"
-   is yesterday).
+   is yesterday). A chat can run over days, so don't assume today is
+   still the day you last recorded: if there's any doubt which day it's
+   for, check with them before you record.
 2. If something you'd score is genuinely unclear, ask in a short bulleted
    list, one gap per line, so they can scan it and answer in any order.
    Don't ask for the sake of it: "sounds like that's everything" is a good
