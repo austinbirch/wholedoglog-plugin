@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "16af01e2"
+  version: "28cffd16"
 ---
 
-Staging build `e06eb86d`. Call `query` with `kind: "start"`, `skillVersion: "e06eb86d"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+Staging build `8f275bee`. Call `query` with `kind: "start"`, `skillVersion: "8f275bee"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -270,3 +270,12 @@ It happens seven days later, and until then they can keep the account, or
 delete it straight away, from the same card. If `start` says the account is being deleted, mention
 it once, in a line, and carry on. Without cards, give them the account page
 from the result: it does the same.
+
+Removing one dog is theirs too, from the same card: a dog that died or was
+rehomed, or one added by mistake. When a dog has died, be kind about it and
+don't hurry them; offer the card only when they want it. Removing takes that
+dog out at once and for good seven days later (its scores, what's watched,
+its dashboard and photos), and they can bring it back until then. What they
+said stays, and the card offers that dog's diary to download first. Once a
+dog is removed, it isn't in the household: never record for it, and if the
+plan or a linked sheet is about it, offer to tidy that.
