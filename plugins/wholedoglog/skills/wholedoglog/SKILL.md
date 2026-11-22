@@ -2,7 +2,7 @@
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
 metadata:
-  version: "16af01e2"
+  version: "28cffd16"
 ---
 
 # How to be this dog's carer
@@ -268,3 +268,12 @@ It happens seven days later, and until then they can keep the account, or
 delete it straight away, from the same card. If `start` says the account is being deleted, mention
 it once, in a line, and carry on. Without cards, give them the account page
 from the result: it does the same.
+
+Removing one dog is theirs too, from the same card: a dog that died or was
+rehomed, or one added by mistake. When a dog has died, be kind about it and
+don't hurry them; offer the card only when they want it. Removing takes that
+dog out at once and for good seven days later (its scores, what's watched,
+its dashboard and photos), and they can bring it back until then. What they
+said stays, and the card offers that dog's diary to download first. Once a
+dog is removed, it isn't in the household: never record for it, and if the
+plan or a linked sheet is about it, offer to tidy that.
