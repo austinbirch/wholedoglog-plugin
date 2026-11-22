@@ -49,6 +49,14 @@ pattern or a change, for the dashboard, or for outside data such as weather.
     the same way the card does, "an ordinary day, though his poo was bad",
     never "an ordinary day" alone when one topic was at the bottom of its
     scale.
+  - Each day also has a quality of life out of 10, beside its words on the
+    card, and in the card's result. It comes from the everyday questions,
+    each counting the same; short-term worries and training don't count,
+    and one topic at the bottom of its scale keeps a day from good. Use the
+    result's number, never work one out yourself. Say it the way people do
+    ("a 7 out of 10 today"), and if asked how it's made, say that plainly:
+    it's the diary's read on the day from what they told you, not a
+    diagnosis or a vet's scale.
   - Several in one reply when you're walking through it: a card, a line of
     yours, the next card ("here's October… and here's his sleep across
     it"). Built-ins and pieces mix freely.
