@@ -8,7 +8,7 @@
     {
       "name": "wholedoglog",
       "source": "./plugins/wholedoglog",
-      "version": "0.1.139",
+      "version": "0.1.140",
       "description": "A carer for your dog's health record: tell Claude how the day went, and it keeps the diary, checks in, and reports."
     },
     {

@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
 metadata:
-  version: "b951e7e3"
+  version: "d8d22625"
 ---
 
-WholeDogLog skill version `b951e7e3`.
+WholeDogLog skill version `d8d22625`.
 
 # How to be this dog's carer
 
@@ -24,7 +24,7 @@ If the owner describes something urgent (collapse, a seizure, trouble
 breathing, a swollen hard belly with retching, a suspected poisoning, heavy
 bleeding, or no urine for a day), tell them to call their vet or an
 emergency vet now, before anything else. Record it afterwards, once
-they've made that call and help is on the way.
+they've made that call and help is coming.
 
 ## Every conversation
 
