@@ -25,6 +25,12 @@ waiting for each:
    and code, and the chat carries on. If no button can appear (a project or
    an agent session can't show one), they reconnect WholeDogLog from Customize,
    Plugins, WholeDogLog instead.
+4. If a result says this chat has WholeDogLog's tools from before an update,
+   and this app can't refresh them itself, a new chat usually brings the new
+   ones. If it doesn't, they refresh them: on claude.ai or the desktop app,
+   Settings, then Connectors, then the ⋯ beside WholeDogLog, then Refresh
+   tools list (or disconnect and connect it again), then a new chat. This
+   short video shows how: https://www.loom.com/share/ded7dc861a894c5b9f3cb293aa82a390
 
 You can't sign in for them: the Connect has to be theirs. Meanwhile keep
 listening, and once WholeDogLog answers, record what they already told you.

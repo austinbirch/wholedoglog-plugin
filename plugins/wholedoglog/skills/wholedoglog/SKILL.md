@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
 metadata:
-  version: "ccf009ec"
+  version: "b7060564"
 ---
 
-WholeDogLog skill version `ccf009ec`.
+WholeDogLog skill version `b7060564`.
 
 # How to be this dog's carer
 
@@ -63,7 +63,8 @@ fits before you act:
   notes) to bring in, or want their own Google Sheet kept up to date too.
 - `reports.md`: they ask how the dog has been, whether something is
   helping, for the dashboard, or for outside data such as weather.
-- `connecting.md`: there are no WholeDogLog tools, or a call failed.
+- `connecting.md`: there are no WholeDogLog tools, a call failed, or a result
+  says this chat's tools are from before an update.
 
 ## The plan
 
