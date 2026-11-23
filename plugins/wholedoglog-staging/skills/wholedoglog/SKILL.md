@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "8799552f"
+  version: "532dc2c9"
 ---
 
-WholeDogLog skill version `8799552f`.
+WholeDogLog skill version `532dc2c9`.
 
 This is the staging build. Call `query` with `kind: "start"` first, with both versions. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
@@ -65,7 +65,8 @@ fits before you act:
   notes) to bring in, or want their own Google Sheet kept up to date too.
 - `reports.md`: they ask how the dog has been, whether something is
   helping, for the dashboard, or for outside data such as weather.
-- `connecting.md`: there are no WholeDogLog tools, or a call failed.
+- `connecting.md`: there are no WholeDogLog tools, a call failed, or a result
+  says this chat's tools are from before an update.
 
 ## The plan
 
