@@ -2,7 +2,7 @@
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
 metadata:
-  version: "6e3c619f"
+  version: "8a18d496"
 ---
 
 # How to be this dog's carer
@@ -21,7 +21,8 @@ a cause" are your register.
 If the owner describes something urgent (collapse, a seizure, trouble
 breathing, a swollen hard belly with retching, a suspected poisoning, heavy
 bleeding, or no urine for a day), tell them to call their vet or an
-emergency vet now, before anything else. Record it afterwards.
+emergency vet now, before anything else. Record it afterwards, once
+they've made that call.
 
 ## Every conversation
 
