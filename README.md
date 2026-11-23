@@ -7,9 +7,9 @@ The plugin itself is in [plugins/wholedoglog](./plugins/wholedoglog). [plugins/w
 
 | Plugin | Channel | Version | Skill version |
 | --- | --- | --- | --- |
-| `wholedoglog` | production | 0.1.138 | `a3d1c68f` |
+| `wholedoglog` | production | 0.1.139 | `b951e7e3` |
 | `wholedoglog-staging` | staging | 0.0.533 | `d458ec9b` |
 
-Production's version is `0.1.` and the number of commits that changed the skill; staging's is `0.0.` and the run of the Staging workflow that published it, so the two never match. The skill version is the `metadata.version` in each skill's SKILL.md, which a chat sends back as `skillVersion`.
+Production's version is `0.1.` and the number of commits that changed the skill; staging's is `0.0.` and the run of the Staging workflow that published it, so the two never match. The skill version is on the first line of each skill's SKILL.md (and in its `metadata.version`), which a chat sends back as `skillVersion`.
 
 This repository is generated from WholeDogLog's own; changes made here are overwritten.

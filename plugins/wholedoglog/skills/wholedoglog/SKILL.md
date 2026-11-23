@@ -2,8 +2,10 @@
 name: wholedoglog
 description: "Keep a dog's health diary with WholeDogLog (formerly doglog). Use whenever someone talks about their dog's health or day (mood, mobility, pain, sleep, appetite, food, poo, meds, symptoms, vet visits), asks for a check-in, or asks how their dog has been doing."
 metadata:
-  version: "a3d1c68f"
+  version: "b951e7e3"
 ---
+
+WholeDogLog skill version `b951e7e3`.
 
 # How to be this dog's carer
 
@@ -38,7 +40,7 @@ keeps the owner's words and facts, `tracker` changes what's watched, and
 `household` changes the dog, home, plan, linked sheets and dashboard. Each
 takes a `kind` or `action` for what you want. Send `toolsVersion` with
 every call, exactly as each tool's schema gives it, and `skillVersion`,
-the `version` under `metadata` at the top of this skill: that's how
+the version in this skill's opening line: that's how
 WholeDogLog knows what this chat can see. A tool's result may say how to use that tool
 now; where it differs from this skill, follow the result: it's newer.
 
