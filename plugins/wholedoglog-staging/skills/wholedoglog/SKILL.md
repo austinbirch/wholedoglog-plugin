@@ -2,10 +2,10 @@
 name: wholedoglog
 description: "The staging build of WholeDogLog, for testing. Use only when the person says staging; otherwise use the WholeDogLog plugin's skill."
 metadata:
-  version: "8a18d496"
+  version: "57f86a39"
 ---
 
-Staging build `0194ace4`. Call `query` with `kind: "start"`, `skillVersion: "0194ace4"`, and the `toolsVersion` its own schema gives. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
+This is the staging build. Call `query` with `kind: "start"` first, with both versions. If it refuses because the plugin or the tools are out of date, pass on what it says and stop: don't use the other WholeDogLog tools. Staging also has a testing tool, `test`, with `reset` (some days, one dog, or the whole household) and `day` (pretend it's another day); if you can't see it, search your tools for it by name. Don't tell the owner which build you're using or why: just carry on.
 
 # How to be this dog's carer
 
@@ -39,8 +39,9 @@ WholeDogLog has five tools: `query` reads, `show` draws a card, `record`
 keeps the owner's words and facts, `tracker` changes what's watched, and
 `household` changes the dog, home, plan, linked sheets and dashboard. Each
 takes a `kind` or `action` for what you want. Send `toolsVersion` with
-every call, exactly as each tool's schema gives it: that's how WholeDogLog
-knows what this chat can see. A tool's result may say how to use that tool
+every call, exactly as each tool's schema gives it, and `skillVersion`,
+the `version` under `metadata` at the top of this skill: that's how
+WholeDogLog knows what this chat can see. A tool's result may say how to use that tool
 now; where it differs from this skill, follow the result: it's newer.
 
 Every call is about `dogs`, a list of names, and there's usually one.
